@@ -1,0 +1,46 @@
+ ****************************** Async *****************
+         we use Async in Javascript because Javascript have single thread(we cannot execute multible things) for this problem we use Async.
+         
+         setTimeout() --> this method have two arguments one for callback method and second one for seting the time.
+         program --> from 1 to 15 
+
+          - creating problem
+          for example :
+            when we have 3 functions 
+               1.for bring the data 
+               2.calculate the data 
+               3.display the data.
+            At this time do not display the data because data are not present then how to display it.
+            we can stop by three ways first one has over which is callback Hell.
+            2nd one promises and 3rd one is Async-await.
+
+
+**************** promises ***************
+
+It is most usible then async. It is a class. which has two arguments. resolve & reject. 
+resolve : 
+  resolve is function which is use for completly execute. Means when the function is full execute
+reject : 
+ reject is also a function which is use for incompletly execute. when reject is return from the promise then it will break. 
+The names of resolve and reject can be anything.
+
+  syntax :
+    new promise((resolve, reject) => {}) 
+
+program --> from 72 to 105
+
+promises are implimented in liberary already. we don't have to implimente like manually.
+
+
+************** async-await ***************
+
+It is most usible then promise. It actually promise but it has little changes in written form.
+when we use async-await we should make async function. inside this function we can call await function. for example.
+
+async function run() {
+   await one();
+   await two();
+   await three();
+}
+
+run();
